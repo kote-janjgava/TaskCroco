@@ -1,0 +1,148 @@
+.user-name {
+  font-weight: 700;
+  color: var(--white);
+}
+.user-image {
+  transition: transform 0.3s ease;
+}
+
+.user-image:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+@media only screen and (width >= 1024px) {
+  .user-image {
+    width: 12em;
+    height: 12em;
+    margin-bottom: 2em;
+  }
+
+  .user-name {
+    font-size: 2.5em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .user-image {
+      width: 11em;
+      height: 11em;
+      margin-bottom: 1.5em;
+    }
+
+    .user-name {
+      font-size: 2em;
+    }
+  }
+
+  @media only screen and (width <= 1710px) {
+    .user-image {
+      width: 10em;
+      height: 10em;
+    }
+
+    .user-name {
+      font-size: 1.8em;
+    }
+  }
+
+  @media only screen and (width <= 1600px) {
+    .user-image {
+      width: 9.5em;
+      height: 9.5em;
+    }
+
+    .user-name {
+      font-size: 1.7em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .user-image {
+      width: 8.5em;
+      height: 8.5em;
+    }
+
+    .user-name {
+      font-size: 1.5em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .user-image {
+      width: 8em;
+      height: 8em;
+    }
+
+    .user-name {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .user-image {
+    width: 7.5em;
+    height: 7.5em;
+    margin-bottom: 1.2em;
+  }
+
+  .user-name {
+    font-size: 1.25em;
+  }
+
+  @media only screen and (width <= 885px) {
+    .user-image {
+      width: 6em;
+      height: 6em;
+      margin-bottom: 1em;
+    }
+
+    .user-name {
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .user-image {
+      width: 5.5em;
+      height: 5.5em;
+    }
+
+    .user-name {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 490px) {
+    .user-profile {
+      margin-bottom: 0.8em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .user-profile {
+    margin-bottom: 0.8em;
+  }
+
+  .user-image {
+    width: 5.5em;
+    height: 5.5em;
+    margin-bottom: 1em;
+  }
+
+  .user-name {
+    font-size: 0.9em;
+  }
+
+  @media only screen and (width <= 375px) {
+    .user-image {
+      width: 4.5em;
+      height: 4.5em;
+      margin-bottom: 1em;
+    }
+
+    .user-name {
+      font-size: 0.8em;
+    }
+  }
+}

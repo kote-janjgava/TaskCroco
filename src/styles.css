@@ -1,0 +1,92 @@
+:root {
+
+  --dark: #1B262C;
+  --light-dark: #252b33;
+  --white: #ffff;
+  --green: #189541;
+  --light-green: #3282B8;
+  --bs-body-bg: var(--dark) !important;
+  --bs-body-color: var(--white);
+  --bs-border-color: var(--light-dark);
+}
+
+html,
+body,
+.app {
+  height: 100%;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+body {
+    -webkit-animation: bgcolor 60s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-green);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.button {
+  background-color: var(--green);
+  color: var(--white) !important;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px !important;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color:  darkgreen;
+  transform: scale(1.2);
+}
+
+
+@media only screen and (width >= 1024px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 768px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media only screen and (width < 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (width <= 457px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+}

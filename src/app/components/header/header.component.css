@@ -1,0 +1,110 @@
+header {
+  background-color: var(--light-dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-brand img {
+  transition: 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.2);
+}
+.image-with-space {
+  margin-right: 15px;
+   width: 168px;
+   height: 46px;}
+
+@media only screen and (width >= 1024px) {
+  header {
+    padding: 0.5em 0;
+  }
+
+  .navbar-brand img {
+    width: 3.2em;
+    height: 1.8em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .navbar-brand img {
+      width: 3em;
+      height: 1.6em;
+    }
+  }
+
+  @media only screen and (width <= 1710px) {
+    header {
+      padding: 0.3em 0;
+    }
+
+    .navbar-brand img {
+      width: 2.6em;
+      height: 1.4em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .navbar-brand img {
+      width: 2.2em;
+      height: 1.2em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .navbar-brand img {
+      width: 2em;
+      height: 1.1em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  header {
+    padding: 0.3em 0;
+  }
+
+  .navbar-brand img {
+    width: 1.9em;
+    height: 1em;
+  }
+
+  @media only screen and (width <= 885px) {
+    header {
+      padding: 0.2em 0;
+    }
+
+    .navbar-brand img {
+      width: 1.7em;
+      height: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .navbar-brand img {
+      width: 1.5em;
+      height: 0.8em;
+    }
+  }
+
+  @media only screen and (width <= 505px) {
+    .navbar-brand img {
+      width: 1.4em;
+      height: 0.75em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  header {
+    padding: 0.2em 0;
+  }
+
+  .navbar-brand img {
+    width: 1.3em;
+    height: 0.7em;
+  }
+}

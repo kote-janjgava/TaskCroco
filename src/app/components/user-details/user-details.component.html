@@ -1,0 +1,24 @@
+<div class="card user-details">
+  <div class="card-body">
+    <div class="mb-3">
+      <app-user-profile [name]="userData?.name"></app-user-profile>
+    </div>
+    <div class="mb-3 user-details-section">
+      <app-user-detail-information
+        [username]="userData?.username"
+        [email]="userData?.email"
+        [city]="userData?.address?.city"
+        [street]="userData?.address?.street"
+        [suite]="userData?.address?.suite"
+        [phone]="userData?.phone"
+        [website]="userData?.website"
+        [companyName]="userData?.company?.name"
+        [catchPhrase]="userData?.company?.catchPhrase"
+        [bs]="userData?.company?.bs"
+      ></app-user-detail-information>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <a [routerLink]="['/posts', userId]" class="btn button">User Posts</a>
+    </div>
+  </div>
+</div>

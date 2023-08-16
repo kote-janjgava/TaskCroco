@@ -1,0 +1,104 @@
+.page-title {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Adjust the margin as needed */
+}
+
+.page-title h3 {
+  font-size: 1.5em;
+  color: #f2ecec; /* Adjust the color as needed */
+  position: relative;
+  display: inline-block;
+}
+
+.page-title h3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 34, 0.5); /* Adjust the glow color and opacity */
+  border-radius: 50%;
+  z-index: -1;
+  animation: glow 2s ease-in-out infinite;
+}
+strong {
+  color: green
+}
+@keyframes glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.3;
+  }
+}
+
+
+
+@media only screen and (width >= 1024px) {
+  .page-title > h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .page-title > h3 {
+      font-size: 1.4em;
+    }
+  }
+
+  @media only screen and (width <= 1600px) {
+    .page-title > h3 {
+      font-size: 1.2em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .page-title > h3 {
+      font-size: 1.05em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .page-title > h3 {
+      font-size: 0.95em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .page-title > h3 {
+    font-size: 0.95em;
+  }
+
+  @media only screen and (width <= 885px) {
+    .page-title > h3 {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .page-title > h3 {
+      font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (width <= 505px) {
+    .page-title > h3 {
+      font-size: 0.75em;
+    }
+  }
+
+  @media only screen and (width <= 457px) {
+    .page-title > h3 {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .page-title > h3 {
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,90 @@
+.user-detail-information strong {
+  color: rgb(226, 230, 221);
+}
+
+
+  .user-detail-information {
+    background-color: #059e05; /* Default background color */
+    transition: background-color 0.9s ease;
+  }
+
+  .user-detail-information:hover {
+    background-color: #189541; /* Background color on hover */
+  }
+
+  .user-detail-information:hover .list-group-item {
+    color: darkgreen; /* Text color on hover */
+  }
+ .user-detail-information .list-group-item {
+    transition: transform 0.3s ease;
+  }
+
+  .user-detail-information .list-group-item:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+    z-index: 1; /* Bring the hovered element to the forefront */
+  }
+@media only screen and (width >= 1024px) {
+  .user-detail-information > .list-group > .list-group-item {
+    font-size: 1.3em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 1.2em;
+    }
+  }
+
+  @media only screen and (width <= 1710px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 1.1em;
+    }
+  }
+
+  @media only screen and (width <= 1600px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 0.85em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .user-detail-information > .list-group > .list-group-item {
+    font-size: 0.85em;
+  }
+
+  @media only screen and (width <= 885px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 0.75em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .user-detail-information > .list-group > .list-group-item {
+    font-size: 0.7em;
+  }
+
+  @media only screen and (width <= 375px) {
+    .user-detail-information > .list-group > .list-group-item {
+      font-size: 0.6em;
+    }
+  }
+}

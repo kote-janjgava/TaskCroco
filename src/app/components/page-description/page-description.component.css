@@ -1,0 +1,74 @@
+.page-description p {
+  text-align: center;
+  font-weight: 500;
+}
+
+.page-description strong {
+  color: green
+}
+
+@media only screen and (width >= 1024px) {
+  .page-description p {
+    font-size: 1em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .page-description p {
+      font-size: 0.95em;
+    }
+  }
+
+  @media only screen and (width <= 1600px) {
+    .page-description p {
+      font-size: 0.85em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .page-description p {
+      font-size: 0.75em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .page-description p {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .page-description p {
+    font-size: 0.7em;
+  }
+
+  @media only screen and (width <= 885px) {
+    .page-description p {
+      font-size: 0.65em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .page-description p {
+      font-size: 0.55em;
+    }
+  }
+
+  @media only screen and (width <= 505px) {
+    .page-description p {
+      font-size: 0.52em;
+    }
+  }
+
+  @media only screen and (width <= 457px) {
+    .page-description p {
+      font-size: 0.55em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .page-description p {
+    font-size: 0.55em;
+  }
+}

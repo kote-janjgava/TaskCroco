@@ -1,0 +1,243 @@
+.table-scroll {
+  display: block;
+  position: relative;
+  overflow: auto;
+}
+
+.users .table th {
+  color: #e7ecf3;
+}
+
+.users .table td {
+  font-weight: 500;
+}
+
+.table-scroll {
+  opacity: 0; /* Initially set the opacity to 0 */
+  animation: fade-in 10s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slide up effect during fade-in */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (width >= 1024px) {
+  .users {
+    height: 100%;
+    padding: 5em 0 !important;
+  }
+
+  .users-title {
+    margin-bottom: 1em;
+  }
+
+  .table-scroll {
+    max-height: 50em;
+    width: 100%;
+  }
+
+  .users .table th {
+    font-size: 1em;
+  }
+
+  .users .table td {
+    font-size: 0.95em;
+  }
+
+  .users a.button {
+    padding: 0.6em 1em;
+    font-size: 0.95em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .users .table th {
+      font-size: 0.98em;
+    }
+
+    .users .table td {
+      font-size: 0.9em;
+    }
+
+    .users a.button {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 1710px) {
+    .users .table th {
+      font-size: 0.9em;
+    }
+
+    .users .table td {
+      font-size: 0.85em;
+    }
+
+    .users a.button {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 1600px) {
+    .users .table th {
+      font-size: 0.85em;
+    }
+
+    .users .table td {
+      font-size: 0.8em;
+    }
+
+    .users a.button {
+      font-size: 0.85em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .users .table th {
+      font-size: 0.8em;
+    }
+
+    .users .table td {
+      font-size: 0.75em;
+    }
+
+    .users a.button {
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .users .table th {
+      font-size: 0.7em;
+    }
+
+    .users .table td {
+      font-size: 0.65em;
+    }
+
+    .users a.button {
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .users {
+    height: 100%;
+    padding: 3em 0 !important;
+  }
+
+  .users-title {
+    margin-bottom: 0.8em;
+  }
+
+  .table-scroll {
+    max-height: 40em;
+    width: 100%;
+  }
+
+  .users .table th {
+    font-size: 0.7em;
+  }
+
+  .users .table td {
+    font-size: 0.65em;
+  }
+
+  .users a.button {
+    padding: 0.6em 1em;
+    font-size: 0.8em;
+  }
+
+  @media only screen and (width <= 885px) {
+    .users .table th {
+      font-size: 0.65em;
+    }
+
+    .users .table td {
+      font-size: 0.6em;
+    }
+
+    .users a.button {
+      font-size: 0.75em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .users .table th {
+      font-size: 0.6em;
+    }
+
+    .users .table td {
+      font-size: 0.5em;
+    }
+
+    .users a.button {
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (width <= 505px) {
+    .users .table th {
+      font-size: 0.55em;
+    }
+
+    .users .table td {
+      font-size: 0.45em;
+    }
+
+    .users a.button {
+      padding: 0.4em 1em;
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (width <= 457px) {
+    .users .table th {
+      font-size: 0.65em;
+    }
+
+    .users .table td {
+      font-size: 0.55em;
+    }
+
+    .users a.button {
+      padding: 0.4em 1em;
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .users {
+    height: 100%;
+    padding: 5em 0 !important;
+  }
+
+  .users-title {
+    margin-bottom: 1em;
+  }
+
+  .table-scroll {
+    max-height: 35em;
+    width: 100%;
+  }
+
+  .users .table th {
+    font-size: 0.65em;
+  }
+
+  .users .table td {
+    font-size: 0.55em;
+  }
+
+  .users a.button {
+    padding: 0.4em 1em;
+    font-size: 1em;
+  }
+}

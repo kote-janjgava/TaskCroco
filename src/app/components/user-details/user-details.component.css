@@ -1,0 +1,113 @@
+.user-details-section {
+  max-width: 600px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+@media only screen and (width >= 1024px) {
+  .user-details {
+    height: 100%;
+    padding: 5em 0 !important;
+  }
+
+  .user-details a.button {
+    padding: 0.5em 1.5em;
+    font-size: 1.1em;
+  }
+
+  .user-details > div:first-of-type {
+    margin-bottom: 2em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .user-details a.button {
+      font-size: 1em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .user-details > div:first-of-type {
+      margin-bottom: 1em;
+    }
+
+    .user-details a.button {
+      padding: 0.4em 1em;
+      font-size: 0.9em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .user-details a.button {
+      font-size: 0.85em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .user-details {
+    height: 100%;
+    padding: 3em 0 !important;
+  }
+
+  .user-details > div:first-of-type {
+    margin-bottom: 1em;
+  }
+
+  .user-details a.button {
+    padding: 0.4em 1em;
+    font-size: 0.8em;
+  }
+
+  @media only screen and (width <= 885px) {
+    .user-details a.button {
+      font-size: 0.7em;
+    }
+  }
+
+  @media only screen and (width <= 725px) {
+    .user-details a.button {
+      padding: 0.5em 1.2em;
+      font-size: 0.65em;
+    }
+  }
+
+  @media only screen and (width <= 490px) {
+    .user-details > div:first-of-type {
+      margin-bottom: 1.2em;
+    }
+
+    .user-details,
+    .user-details > div:first-of-type {
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .user-details {
+    height: 100%;
+    padding: 2em 0 !important;
+  }
+
+  .user-details a.button {
+    padding: 0.6em 1.2em;
+    font-size: 0.7em;
+  }
+
+  .user-details > div:first-of-type {
+    margin-bottom: 1.2em;
+  }
+
+  .user-details,
+  .user-details > div:first-of-type {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  @media only screen and (width <= 375px) {
+    .user-details a.button {
+      padding: 0.6em 1.2em;
+      font-size: 0.6em;
+    }
+  }
+}

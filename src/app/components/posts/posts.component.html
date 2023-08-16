@@ -1,0 +1,10 @@
+<div class="posts container">
+  <h1>
+    <strong>{{ userData?.name }}'s </strong> Posts
+  </h1>
+  <div
+    class="posts-content d-flex flex-wrap justify-content-center align-items-center"
+  >
+    <app-post-card *ngFor="let post of postData" [post]="post"></app-post-card>
+  </div>
+</div>

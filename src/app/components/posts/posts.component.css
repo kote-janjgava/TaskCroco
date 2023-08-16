@@ -1,0 +1,98 @@
+.posts {
+  text-align: center;
+}
+
+.posts h1 {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+strong {
+  color: green
+}
+@media only screen and (width >= 1024px) {
+  .posts {
+    padding: 8em 0 6em !important;
+  }
+
+  .posts > h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  @media only screen and (width <= 1850px) {
+    .posts > h1 {
+      font-size: 2.5em;
+    }
+  }
+
+  @media only screen and (width <= 1710px) {
+    .posts {
+      padding: 6em 0 4em !important;
+    }
+
+    .posts > h1 {
+      font-size: 2em;
+    }
+  }
+
+  @media only screen and (width <= 1600px) {
+    .posts > h1 {
+      font-size: 1.8em;
+    }
+  }
+
+  @media only screen and (width <= 1370px) {
+    .posts > h1 {
+      font-size: 1.5em;
+    }
+  }
+
+  @media only screen and (width <= 1180px) {
+    .posts {
+      padding: 5em 0 3em !important;
+    }
+
+    .posts > h1 {
+      font-size: 1.3em;
+    }
+  }
+}
+
+@media only screen and (width < 1024px) and (width >= 425px) {
+  .posts {
+    padding: 4em 0 2em !important;
+  }
+
+  .posts > h1 {
+    font-size: 1.3em;
+  }
+
+  @media only screen and (width <= 900px) {
+    .posts {
+      padding: 5em 0 3em !important;
+    }
+
+    .posts > h1 {
+      font-size: 1em;
+    }
+  }
+}
+
+@media only screen and (width < 425px) {
+  .posts {
+    padding: 4em 0 2.5em !important;
+  }
+
+  .posts > h1 {
+    font-size: 1.2em;
+  }
+
+  @media only screen and (width <= 375px) {
+    .posts > h1 {
+      font-size: 1em;
+    }
+  }
+}
